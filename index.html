@@ -18,7 +18,9 @@
 				li_address.innerText = document.getElementById("input-address").value;
 				if (document.getElementById("input-admin").checked == true){
 					li_admin.innerHTML = "X"
-				};
+				}else{
+					li_admin.innerHTML = "-";
+				}
 				let ul_name = document.getElementById("ul_name");
 				let ul_email = document.getElementById("ul_email");
 				let ul_address = document.getElementById("ul_address");
