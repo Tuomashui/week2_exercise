@@ -6,7 +6,6 @@
 	<meta charset="UTF-8">
 </head>
 
-//moimoimoi
 <body>
 		<script>function submit_data() {
   var li_name = document.createElement("li");
@@ -16,7 +15,10 @@
   li_name.innerText = document.getElementById("input-username").value;
   li_email.innerText = document.getElementById("input-email").value;
   li_address.innerText = document.getElementById("input-address").value;
-  li_admin.innerHTML = document.getElementById("input-admin").value;
+  if (document.getElementById("input-admin").checked == true) {
+    li_admin.innerHTML = "X";
+  }
+  ;
   var ul_name = document.getElementById("ul_name");
   var ul_email = document.getElementById("ul_email");
   var ul_address = document.getElementById("ul_address");
@@ -27,6 +29,10 @@
   ul_admin.appendChild(li_admin);
 }</script>
 	<div id="app"></div>
+	<style>ul {
+		  list-style-type: none;
+		}</style>
+	
 	<table>
 		<tr>
 			<th>username</th>
@@ -35,16 +41,16 @@
 			<th>admin</th>
 		</tr>
 		<tr>
-			<th><ul id="ul_name"></ul></th>
-			<th><ul id="ul_email"></ul></th>
-			<th><ul id="ul_address"></ul></th>
-			<th><ul id="ul_admin"></ul></th>
+			<td><ul id="ul_name"></ul></td>
+			<td><ul id="ul_email"></ul></td>
+			<td><ul id="ul_address"></ul></td>
+			<td><ul id="ul_admin"></ul></td>
 		</tr>
 		<tr>
 			<td><textarea id="input-username"></textarea></td>
 			<td><textarea id="input-email"></textarea></td>
 			<td><textarea id="input-address"></textarea></td>
-			<td><input type="checkbox" id="input-admin" value="X" checked=""></td>
+			<td><input type="checkbox" id="input-admin"></td>
 		</tr>
 	</table>
 
