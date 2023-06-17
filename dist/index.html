@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+		<script>function submit_data() {
+  var li_name = document.createElement("li");
+  var li_email = document.createElement("li");
+  var li_address = document.createElement("li");
+  var li_admin = document.createElement("li");
+  li_name.innerText = document.getElementById("input-username").value;
+  li_email.innerText = document.getElementById("input-email").value;
+  li_address.innerText = document.getElementById("input-address").value;
+  if (document.getElementById("input-admin").checked == true) {
+    li_admin.innerHTML = "X";
+  }
+  ;
+  var ul_name = document.getElementById("ul_name");
+  var ul_email = document.getElementById("ul_email");
+  var ul_address = document.getElementById("ul_address");
+  var ul_admin = document.getElementById("ul_admin");
+  ul_name.appendChild(li_name);
+  ul_email.appendChild(li_email);
+  ul_address.appendChild(li_address);
+  ul_admin.appendChild(li_admin);
+}</script>
+	<div id="app"></div>
+	<style>ul {
+		  list-style-type: none;
+		}</style>
+	
+	<table>
+		<tr>
+			<th>username</th>
+			<th>email</th>
+			<th>address</th>
+			<th>admin</th>
+		</tr>
+		<tr>
+			<td><ul id="ul_name"></ul></td>
+			<td><ul id="ul_email"></ul></td>
+			<td><ul id="ul_address"></ul></td>
+			<td><ul id="ul_admin"></ul></td>
+		</tr>
+		<tr>
+			<td><textarea id="input-username"></textarea></td>
+			<td><textarea id="input-email"></textarea></td>
+			<td><textarea id="input-address"></textarea></td>
+			<td><input type="checkbox" id="input-admin"></td>
+		</tr>
+	</table>
+
+
+	<button id="submit-data" onclick="submit_data()">submit</button>
+</body>
+</html>
