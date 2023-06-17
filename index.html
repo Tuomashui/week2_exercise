@@ -9,6 +9,7 @@
 <body>
 		<script> 	
 				function submit_data() {
+				event.preventDefault();
 				let li_name = document.createElement("li");
 				let li_email = document.createElement("li");
 				let li_address = document.createElement("li");
@@ -51,17 +52,16 @@
 			<td><ul id="ul_address"></ul></td>
 			<td><ul id="ul_admin"></ul></td>
 		</tr>
-		<tr>
-			<form>
-			<td><input type="text" id="input-username"></textarea></td>
-			<td><input type="text" id="input-email"></textarea></td>
-			<td><input type="text" id="input-address"></textarea></td>
-			<td><input type="checkbox" id="input-admin"></checkbox></td>
-			</form>
-		</tr>
 	</table>
 
+		<form>
+		<input type="text" id="input-username" placeholder="username">
+		<input type="text" id="input-email" placeholder="email">
+		<input type="text" id="input-address" placeholder="address">
+		<input type="checkbox" id="input-admin" placeholder="admin"></checkbox>
+		<input type="submit" id="submit-data" value="submit" onclick="submit_data()">
+		</form>
 
-	<button id="submit-data" onclick="submit_data()">submit</button>
+
 </body>
 </html>
