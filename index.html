@@ -43,26 +43,8 @@
 				}
 
 			function clear_table(){
-				let ul_name = document.getElementById("ul_name");
-				let ul_email = document.getElementById("ul_email");
-				let ul_address = document.getElementById("ul_address");
-				let ul_admin = document.getElementById("ul_admin");
-				let row1 = document.getElementById("row-1");
-				let row2 = document.getElementById("row-2");
-				let row3 = document.getElementById("row-3");
-				let row4 = document.getElementById("row-4");
-				let row5 = document.getElementById("row-5");
-				let row6 = document.getElementById("row-6");
-				row1.innerHTML = "";
-				row2.innerHTML = "";
-				row3.innerHTML = "";
-				row4.innerHTML = "";
-				row5.innerHTML = "";
-				row6.innerHTML = "";
-				ul_name.innerHTML = ""; 
-				ul_email.innerHTML = ""; 
-				ul_address.innerHTML = ""; 
-				ul_admin.innerHTML = ""; 
+				let table = document.getElementById("full-table");
+				table.innerHTML = "";
 				
 			}
 				</script>
@@ -72,14 +54,14 @@
 		  list-style-type: none;
 		}
 	  </style>
-	
-	<table id="full-table">
+
 		<tr><th>username</th>
 			<th>email</th>
 			<th>address</th>
 			<th>admin</th>
 		</tr>
 		
+	<table id="full-table">
 
 		<tr id="row-2">
 			<td>kille54kotilo</td>
