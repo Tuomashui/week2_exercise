@@ -77,16 +77,19 @@ function clear_table() {
 			<td><ul id="ul_address"></ul></td>
 			<td><ul id="ul_admin"></ul></td>
 		</tr>
-		<tr>		
-			<form>
-			<td><input type="text" id="input-username" placeholder="username"></td>
-			<td><input type="text" id="input-email" placeholder="email"></td>
-			<td><input type="text" id="input-address" placeholder="address"></td>
-			<td><input type="checkbox" id="input-admin" placeholder="admin">
-			<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
-			</form>
-		</tr>
 	</table>
+
+	<tr>		
+		<form>
+		<td><input type="text" id="input-username" placeholder="username"></td>
+		<td><input type="text" id="input-email" placeholder="email"></td>
+		<td><input type="text" id="input-address" placeholder="address"></td>
+		<td><input type="checkbox" id="input-admin" placeholder="admin">
+		<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
+		</form>
+	</tr>
+
+
 	<button id="empty-table" onclick="clear_table()">Clear</button>
 
 </body>
