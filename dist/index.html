@@ -29,13 +29,20 @@
   ul_email.appendChild(li_email);
   ul_address.appendChild(li_address);
   ul_admin.appendChild(li_admin);
+}
+function clear_table() {
+  var table = document.getElementById("users-table");
+  var users = document.getElementById("all-users");
+  users.innerHTML = "";
+  //table.innerHTML = "";
 }</script>
 	<div id="app"></div>
 	<style>ul {
 		  list-style-type: none;
 		}</style>
 	
-	<table>
+	<table id="users-table">
+		
 		<tr>
 			<th>username</th>
 			<th>email</th>
@@ -43,6 +50,24 @@
 			<th>admin</th>
 		</tr>
 		<tr>
+			<th>kille54kotilo</th>
+			<th>kille87@gmail.com</th>
+			<th>koivu66</th>
+			<th>-</th>
+		</tr>
+		<tr>
+			<th>nyrppä</th>
+			<th>muumuu@hotmail.com</th>
+			<th>skinnarilantie 5</th>
+			<th>X</th>
+		</tr>
+		<tr>
+			<th>haikara()lokki</th>
+			<th>korppi@suomi24.ru</th>
+			<th>taivas 8</th>
+			<th>-</th>
+		</tr>
+		<tr id="all-users">
 			<td><ul id="ul_name"></ul></td>
 			<td><ul id="ul_email"></ul></td>
 			<td><ul id="ul_address"></ul></td>
@@ -53,12 +78,12 @@
 			<td><input type="text" id="input-username" placeholder="username"></td>
 			<td><input type="text" id="input-email" placeholder="email"></td>
 			<td><input type="text" id="input-address" placeholder="address"></td>
-			<td><input type="checkbox" id="input-admin" placeholder="admin"></td>
-			<td><input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
+			<td><input type="checkbox" id="input-admin" placeholder="admin">
+			<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
 			</form>
 		</tr>
 	</table>
-
+	<button id="empty-table" onclick="clear_table()">Clear</button>
 
 </body>
 </html>
