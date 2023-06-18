@@ -31,6 +31,12 @@
 				ul_address.appendChild(li_address);
 				ul_admin.appendChild(li_admin);
 				}
+			function clear_table(){
+				let table = document.getElementById("users-table");
+				let users = document.getElementById("all-users")
+				users.innerHTML = "";
+				//table.innerHTML = "";
+			}
 				</script>
 	<div id="app"></div>
 	<style>
@@ -39,7 +45,7 @@
 		}
 	  </style>
 	
-	<table>
+	<table id="users-table">
 		
 		<tr>
 			<th>username</th>
@@ -65,7 +71,7 @@
 			<th>taivas 8</th>
 			<th>-</th>
 		</tr>
-		<tr>
+		<tr id="all-users">
 			<td><ul id="ul_name"></ul></td>
 			<td><ul id="ul_email"></ul></td>
 			<td><ul id="ul_address"></ul></td>
@@ -81,7 +87,7 @@
 			</form>
 		</tr>
 	</table>
-
+	<button id="empty-table" onclick="clear_table()">Clear</button>
 
 </body>
 </html>
