@@ -53,43 +53,42 @@ function clear_table() {
 			<th>address</th>
 			<th>admin</th>
 		</tr>
-		<tr>
-			<th>kille54kotilo</th>
-			<th>kille87@gmail.com</th>
-			<th>koivu66</th>
-			<th>-</th>
-		</tr>
-		<tr>
-			<th>nyrppä</th>
-			<th>muumuu@hotmail.com</th>
-			<th>skinnarilantie 5</th>
-			<th>X</th>
-		</tr>
-		<tr>
-			<th>haikara()lokki</th>
-			<th>korppi@suomi24.ru</th>
-			<th>taivas 8</th>
-			<th>-</th>
-		</tr>
 		<tr id="all-users">
-			<td><ul id="ul_name"></ul></td>
-			<td><ul id="ul_email"></ul></td>
-			<td><ul id="ul_address"></ul></td>
-			<td><ul id="ul_admin"></ul></td>
+			<td><ul id="ul_name">
+				<li>mato</li>
+				<li>lisko</li>
+				<li>toukka</li>
+
+			</ul></td>
+			<td><ul id="ul_email">
+				<li>matomatonen@gmail.com</li>
+				<li>matomatonen@gmail.com</li>
+				<li>matomatonen@gmail.com</li>
+
+			</ul></td>
+			<td><ul id="ul_address">
+				<li>multa 1</li>
+				<li>multa 1</li>
+				<li>multa 1</li>
+
+			</ul></td>
+			<td><ul id="ul_admin">
+				<li>-</li>
+				<li>X</li>
+				<li>-</li>
+
+			</ul></td>
+		</tr>
+		<tr>		
+			<form>
+			<td><input type="text" id="input-username" placeholder="username"></td>
+			<td><input type="text" id="input-email" placeholder="email"></td>
+			<td><input type="text" id="input-address" placeholder="address"></td>
+			<td><input type="checkbox" id="input-admin" placeholder="admin">
+			<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
+			</form>
 		</tr>
 	</table>
-
-	<tr>		
-		<form>
-		<td><input type="text" id="input-username" placeholder="username"></td>
-		<td><input type="text" id="input-email" placeholder="email"></td>
-		<td><input type="text" id="input-address" placeholder="address"></td>
-		<td><input type="checkbox" id="input-admin" placeholder="admin">
-		<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
-		</form>
-	</tr>
-
-
 	<button id="empty-table" onclick="clear_table()">Clear</button>
 
 </body>
