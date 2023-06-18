@@ -38,7 +38,6 @@ function clear_table() {
   var row1 = document.getElementById("row-1");
   var row2 = document.getElementById("row-2");
   var row3 = document.getElementById("row-3");
-  var table = document.getElementById("users-table");
   row1.innerHTML = "";
   row2.innerHTML = "";
   row3.innerHTML = "";
@@ -53,6 +52,13 @@ function clear_table() {
 		}</style>
 	
 	<table>
+		
+		<tr>
+			<th>username</th>
+			<th>email</th>
+			<th>address</th>
+			<th>admin</th>
+		</tr>
 	
 		<tr id="row-2">
 			<td>kille54kotilo</td>
@@ -86,16 +92,17 @@ function clear_table() {
 			</ul></td>
 		</tr>
 		<tr>		
-			<form id="users-table">
-			<td><input type="text" id="input-username" placeholder="username"></td>
-			<td><input type="text" id="input-email" placeholder="email"></td>
-			<td><input type="text" id="input-address" placeholder="address"></td>
-			<td><input type="checkbox" id="input-admin" placeholder="admin">
-			<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
-			</form>
+			
 		</tr>
 		
 	</table>
+	<form>
+		<td><input type="text" id="input-username" placeholder="username"></td>
+		<td><input type="text" id="input-email" placeholder="email"></td>
+		<td><input type="text" id="input-address" placeholder="address"></td>
+		<td><input type="checkbox" id="input-admin" placeholder="admin">
+		<input type="submit" id="submit-data" value="submit" onclick="submit_data()"></td>
+		</form>
 	<button id="empty-table" onclick="clear_table()">Clear</button>
 
 </body>
