@@ -31,10 +31,14 @@
   ul_admin.appendChild(li_admin);
 }
 function clear_table() {
-  var table = document.getElementById("users-table");
-  var users = document.getElementById("all-users");
-  users.innerHTML = "";
-  //table.innerHTML = "";
+  var ul_name = document.getElementById("ul_name");
+  var ul_email = document.getElementById("ul_email");
+  var ul_address = document.getElementById("ul_address");
+  var ul_admin = document.getElementById("ul_admin");
+  ul_name.innerHTML = "";
+  ul_email.innerHTML = "";
+  ul_address.innerHTML = "";
+  ul_admin.innerHTML = "";
 }</script>
 	<div id="app"></div>
 	<style>ul {
