@@ -43,8 +43,26 @@
 				}
 
 			function clear_table(){
-				let table = document.getElementById("full-table");
-				table.innerHTML = "";
+				let ul_name = document.getElementById("ul_name");
+				let ul_email = document.getElementById("ul_email");
+				let ul_address = document.getElementById("ul_address");
+				let ul_admin = document.getElementById("ul_admin");
+				let row1 = document.getElementById("row-1");
+				let row2 = document.getElementById("row-2");
+				let row3 = document.getElementById("row-3");
+				let row4 = document.getElementById("row-4");
+				let row5 = document.getElementById("row-5");
+				let row6 = document.getElementById("row-6");
+				ul_name.innerHTML ="";
+				ul_email.innerHTML ="";
+				ul_address.innerHTML ="";
+				ul_admin.innerHTML = "";
+				row1.remove();
+				row2.remove();
+				row3.remove();
+				row4.remove();
+				row5.remove();
+				row6.remove();
 				
 			}
 				</script>
@@ -54,7 +72,7 @@
 		  list-style-type: none;
 		}
 	  </style>
-
+	  
 		<tr><th>username</th>
 			<th>email</th>
 			<th>address</th>
