@@ -14,8 +14,17 @@
   var li_address = document.createElement("li");
   var li_admin = document.createElement("li");
   li_name.innerText = document.getElementById("input-username").value;
+  if (li_name.innerText == null) {
+    li_name.innerText = " ";
+  }
   li_email.innerText = document.getElementById("input-email").value;
+  if (li_email.innerText == null) {
+    li_email.innerText = " ";
+  }
   li_address.innerText = document.getElementById("input-address").value;
+  if (li_address.innerText == null) {
+    li_address.innerText = " ";
+  }
   if (document.getElementById("input-admin").checked == true) {
     li_admin.innerHTML = "X";
   } else {
@@ -52,11 +61,13 @@ function clear_table() {
 		}</style>
 	
 	<table>
+		<tr><th>username</th>
+			<th>email</th>
+			<th>address</th>
+			<th>admin</th>
+		</tr>
 		
-		<th>username</th>
-		<th>email</th>
-		<th>address</th>
-		<th>admin</th>
+
 		<tr id="row-2">
 			<td>kille54kotilo</td>
 			<td>kille87@gmail.com</td>
