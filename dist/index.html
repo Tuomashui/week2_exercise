@@ -39,7 +39,6 @@ function clear_table() {
   var row2 = document.getElementById("row-2");
   var row3 = document.getElementById("row-3");
   var table = document.getElementById("users-table");
-  table.innerHTML = "";
   row1.innerHTML = "";
   row2.innerHTML = "";
   row3.innerHTML = "";
@@ -53,14 +52,7 @@ function clear_table() {
 		  list-style-type: none;
 		}</style>
 	
-	<table id="users-table">
-		
-		<tr>
-			<th>username</th>
-			<th>email</th>
-			<th>address</th>
-			<th>admin</th>
-		</tr>
+	<table>
 	
 		<tr id="row-2">
 			<td>kille54kotilo</td>
@@ -94,7 +86,7 @@ function clear_table() {
 			</ul></td>
 		</tr>
 		<tr>		
-			<form>
+			<form id="users-table">
 			<td><input type="text" id="input-username" placeholder="username"></td>
 			<td><input type="text" id="input-email" placeholder="email"></td>
 			<td><input type="text" id="input-address" placeholder="address"></td>
