@@ -32,10 +32,14 @@
 				ul_admin.appendChild(li_admin);
 				}
 			function clear_table(){
-				let table = document.getElementById("users-table");
-				let users = document.getElementById("all-users")
-				users.innerHTML = "";
-				//table.innerHTML = "";
+				let ul_name = document.getElementById("ul_name");
+				let ul_email = document.getElementById("ul_email");
+				let ul_address = document.getElementById("ul_address");
+				let ul_admin = document.getElementById("ul_admin");
+				ul_name.innerHTML = ""; 
+				ul_email.innerHTML = ""; 
+				ul_address.innerHTML = ""; 
+				ul_admin.innerHTML = ""; 
 			}
 				</script>
 	<div id="app"></div>
